@@ -15,4 +15,29 @@ const hawaiianPizza = {
   price: 14.95,
 };
 
+// Is this object mutable?
+
+hawaiianPizza.price = 16.95
+
+console.log(hawaiianPizza)
+
+// const => it cannot be reassigned
+
+// will this work?
+// hawaiianPizza = {};
+
+
+// What would happen?
+
+// copying the Hawaiian pizza value?
+const myPizza = hawaiianPizza;
+
+myPizza.price = 12.95;
+
+console.log(myPizza)
+console.log(hawaiianPizza)
+
+console.log (myPizza === hawaiianPizza);
+
+
 

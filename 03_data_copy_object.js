@@ -16,4 +16,18 @@ const hawaiianPizza = {
 };
 
 // spread operator
+const myPizza = {
+  ...hawaiianPizza,
+  ingredients: [...hawaiianPizza.ingredients, 'bacon'],
+  price: 12.95
+}
+
+console.log(myPizza === hawaiianPizza)
+
+
+// spread => shallow copy
+
+// myPizza.ingredients.push('bacon')
+
+console.log(myPizza)
 
