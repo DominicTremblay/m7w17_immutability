@@ -11,36 +11,36 @@
 
 ## State Recap
 
-- Data-driven UI => UI state is going to be rendered based on the current state. Any change happens to the state, the UI will update automatically
+* Data-driven UI => UI state is going to be rendered based on the current state. Any change happens to the state, the UI will update automatically
 
-- Single source of truth => centralize the data management => flow of information more predicatable. Consistent accross the application.
-
-
+* Single source of truth => centralize the data management => flow of information more predicatable. Consistent accross the application.
 
 ## Immutability 
 
-- immutable data that can't be changed
+* immutable data that can't be changed
 
-- any updates => creation a new structure
+* any updates => creation a new structure
 
-- it makes the update process more efficient => updating the state
+* it makes the update process more efficient => updating the state
 
-- React will look at the references, not the values
+* React will look at the references, not the values
+
+- [Object Reference](./01_object_references.js)
 
 ## Stale State
 
-- a stale state will lead to stale UI => UI won't change
+* a stale state will lead to stale UI => UI won't change
 
 1. updating the state is async
 
 2. mutating the state directly
 
-
 ## Duplicating Arrays and Objects
 
+* [Array Data Copy](./02_data_copy_array.js)
+* [Object Data Copy](./03_data_copy_object.js)
 
 ## Updating the state with the spread operator
-
 
 ## useReducer
 
@@ -50,4 +50,3 @@ As our React becomes larger and more complex, managing state with useReducer wil
 * clearer separation of concerns
 * can be more easily tested, no side effects
 * centralize the state management
-
